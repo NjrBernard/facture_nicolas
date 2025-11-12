@@ -84,7 +84,7 @@ if (!empty($factures)) {
         <td class="court"><?php echo $facture['id_client']; ?></td>
         <td class="long"><?php foreach ($clients as $client) {
             if ($facture['id_client'] == $client['id_client']) {
-                echo $client['nom'];break;
+                echo $client['nom'] . " ". $client['prenom'];break;
             }
             } ?></td><td><?php echo $client['date_naissance'] ?></td></tr>
 <?php }

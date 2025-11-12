@@ -43,10 +43,10 @@ if (isset($_POST['montant']) && isset($_POST['produits']) && isset($_POST['quant
 ?>
 <body>
 <form method="post" action="add_facture.php">
-    <label for="montant">Montant: </label><input type="number" name="montant"><br>
-    <label for="produits">Produits: </label><input type="text" name="produits"><br>
-    <label for="quantite">Quantité: </label><input type="number" name="quantite"><br>
-        <select name="id_client" id="id_client">
+    <label for="montant">Montant: </label><input type="number" name="montant" required><br>
+    <label for="produits">Produits: </label><input type="text" name="produits" required><br>
+    <label for="quantite">Quantité: </label><input type="number" name="quantite" required><br>
+        <select name="id_client" id="id_client" required>
             <option value="0">Sélectionnez un client</option>
             <?php foreach ($clients as $client) {?>
             <option value="<?php echo $client['id_client']?>"><?php echo $client['id_client'] . ' - ' . $client['nom'] . ' '  . $client['prenom']?></option>
