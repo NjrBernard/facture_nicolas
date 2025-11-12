@@ -1,0 +1,89 @@
+a, a:hover, a:focus, a:active{
+    color: orange;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px saddlebrown;
+}
+
+button {
+    background-color: lemonchiffon;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    min-width: 150px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: orange;
+}
+
+.factures {
+    background-color: saddlebrown;
+    color: lemonchiffon;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.clients {
+    background-color: antiquewhite;
+    color: lemonchiffon;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+body {
+    color: saddlebrown;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px;
+
+}
+
+th {
+    background-color: lemonchiffon;
+    border: solid 1px;
+}
+
+td {
+    text-align: center;
+    border: solid 1px;
+    padding: 5px;
+}
+
+.court {
+    width: 5%;
+    min-width: 100px;
+}
+
+.long {
+    width: 30%;
+}
+
+input, select {
+    background-color: antiquewhite;
+    border: solid orange 1px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.hidden {
+    display : none;
+}
