@@ -35,6 +35,7 @@ if (isset($_GET['id_facture'])) {
     $facture_a_modifier = $query->fetch();
 }
 
+
 $sql = "SELECT * FROM clients";
 $query = $bdd->query($sql);
 $clients = $query->fetchAll();

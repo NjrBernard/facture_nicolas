@@ -58,7 +58,7 @@ if (!empty($factures)) {
     <th>Quantité</th>
     <th>ID Client</th>
     <th>Nom du client</th>
-    <th>Date de naissance client</th>
+    <th hidden>Date de naissance client</th>
 </tr>"; if (isset($_GET['id_facture']))  echo "<tbody>";
     foreach ($factures as $facture) {
         foreach ($clients as $client) {
@@ -86,7 +86,7 @@ if (!empty($factures)) {
             if ($facture['id_client'] == $client['id_client']) {
                 echo $client['nom'] . " ". $client['prenom'];break;
             }
-            } ?></td><td><?php echo $client['date_naissance'] ?></td></tr>
+            } ?></td><td hidden><?php echo $client['date_naissance'] ?></td></tr>
 <?php }
 "</table>";
 
