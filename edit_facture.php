@@ -67,10 +67,10 @@ $clients = $query->fetchAll();
 <?php if (!empty($facture_a_modifier)) { ?>
 <form method="POST">
     <input type="hidden" name="id_facture" value="<?= $facture_a_modifier['id_facture'] ?>">
-    <input type="number" name="montant" value="<?= $facture_a_modifier['montant'] ?>">
-    <input type="text" name="produits" value="<?= $facture_a_modifier['produits'] ?>">
-    <input type="number" name="quantite" value="<?= $facture_a_modifier['quantite'] ?>">
-    <select name="id_client" id="id_client">
+    <label for="montant">Montant<input type="number" name="montant" value="<?= $facture_a_modifier['montant'] ?>"><br>
+    <label for="produits">Produits</label><input type="text" name="produits" value="<?= $facture_a_modifier['produits'] ?>"><br>
+        <label for="quantite">Quantité</label><input type="number" name="quantite" value="<?= $facture_a_modifier['quantite'] ?>"><br>
+        <label for="id_client">Client</label><select name="id_client" id="id_client">
         <?php foreach ($clients as $client) {?>
             <option value="<?php echo $client['id_client']?>" <?php if ($client['id_client'] === $facture_a_modifier['id_client']) echo 'selected'?>><?php echo $client['id_client'] . ' - ' . $client['nom'] . ' '  . $client['prenom'] . " " . $facture_a_modifier['id_client']?></option>
         <?php } ?>
